@@ -4,21 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>आमची उत्पादने - तुळजाई हार्डवेअर</title>
-    <link rel="stylesheet" href="css/style.css"><!-- तुमची CSS फाईल लिंक करा -->
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navbar तुमचा आधीचाच राहील -->
+<!-- ================= TOP BAR ================= -->
+<div class="top-bar">
+    <div class="container top-bar-inner">
 
-    <section class="product-section">
+        <div class="left-top">
+            <a href="tel:+917620692425" class="top-link">
+                <i class="fa-solid fa-phone"></i> +91 7620692425
+            </a>
+
+            <a href="tel:+917620056568" class="top-link">
+                <i class="fa-solid fa-phone"></i> +91 7620056568
+            </a>
+
+            <a href="mailto:tuljaaihardware@gmail.com" class="top-link">
+                <i class="fa-solid fa-envelope"></i> tuljaaihardware@gmail.com
+            </a>
+        </div>
+
+        <div class="right-top">
+            <a href="https://wa.me/917620692425?text=Hello%20Tuljaai%20Hardware,%20I%20want%20information%20about%20your%20products."
+               target="_blank"
+               class="top-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                Chat on WhatsApp
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container header">
+
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo">
+            <div>
+                <h1>तुळजाई हार्डवेअर</h1>
+                <p>& Tibak Sinchan</p>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search Products...">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <div class="container nav-container">
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<!-- ================= PRODUCTS ================= -->
+<section class="product-section">
+    <div class="container">
         <h1 class="section-title">आमची सर्व उत्पादने (Our Products)</h1>
-            
+
         <div class="product-grid">
-            
+
             <!-- Card 1: Drip Irrigation -->
             <div class="product-card">
                 <div class="image-container">
-                    <img src="images/drip-tibak.jpg" alt="Drip Irrigation">
+                    <img src="drip-tibak.jpg" alt="Drip Irrigation">
                     <div class="icon-circle">💧</div>
                 </div>
                 <h3>ठिबक सिंचन<br><span>Drip Irrigation Systems</span></h3>
@@ -27,7 +108,7 @@
             <!-- Card 2: Motor Pump -->
             <div class="product-card">
                 <div class="image-container">
-                    <img src="images/motor-pump.jpg" alt="Motor Pump">
+                    <img src="motor-pump.jpg" alt="Motor Pump">
                     <div class="icon-circle">⚙️</div>
                 </div>
                 <h3>मोटार पंप<br><span>Motor Pump & Injectors</span></h3>
@@ -36,7 +117,7 @@
             <!-- Card 3: Sprinkler Irrigation -->
             <div class="product-card">
                 <div class="image-container">
-                    <img src="images/sprinkler.jpg" alt="Sprinkler">
+                    <img src="sprinkler.jpg" alt="Sprinkler">
                     <div class="icon-circle">🚿</div>
                 </div>
                 <h3>तुषार सिंचन<br><span>Sprinkler Irrigation</span></h3>
@@ -45,7 +126,7 @@
             <!-- Card 4: PVC Pipes -->
             <div class="product-card">
                 <div class="image-container">
-                    <img src="images/pvc-pipe.jpg" alt="PVC Pipes">
+                    <img src="pvc-pipe.jpg" alt="PVC Pipes">
                     <div class="icon-circle">⭕</div>
                 </div>
                 <h3>पीव्हीसी पाईप्स<br><span>PVC Pipes & Fittings</span></h3>
@@ -54,7 +135,7 @@
             <!-- Card 5: Solvent Cement -->
             <div class="product-card">
                 <div class="image-container">
-                    <img src="images/solvent.jpg" alt="Solvent">
+                    <img src="solvent.jpg" alt="Solvent">
                     <div class="icon-circle">🧪</div>
                 </div>
                 <h3>सॉल्व्हेंट सिमेंट<br><span>PVC Pipe Solvent</span></h3>
@@ -63,14 +144,26 @@
             <!-- Card 6: Hardware Materials -->
             <div class="product-card">
                 <div class="image-container">
-                    <img src="images/hardware.jpg" alt="Hardware">
+                    <img src="hardware.jpg" alt="Hardware">
                     <div class="icon-circle">🛠️</div>
                 </div>
                 <h3>हार्डवेअर आणि शेती साहित्य<br><span>Agricultural & Hardware Tools</span></h3>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© 2026 Tuljaai Hardware & Tibak Sinchan | All Rights Reserved.</p>
+
+    <a href="https://wa.me/917620692425" class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
