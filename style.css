@@ -350,6 +350,79 @@ CATEGORIES
 }
 
 /* ===============================
+PRODUCT SECTION (products.html page)
+=================================*/
+
+.product-section{
+    padding:130px 0 90px;
+    background:#eef4fb;
+    min-height:100vh;
+}
+
+.product-section .product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:35px;
+}
+
+.product-section .product-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    text-align:center;
+    padding-bottom:25px;
+    opacity:1;
+    transform:none;
+}
+
+.product-section .product-card:hover{
+    transform:translateY(-10px);
+}
+
+.image-container{
+    position:relative;
+    width:100%;
+    height:220px;
+}
+
+.image-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.icon-circle{
+    position:absolute;
+    bottom:-25px;
+    right:20px;
+    width:55px;
+    height:55px;
+    background:#0d6efd;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:26px;
+    box-shadow:0 8px 18px rgba(0,0,0,.25);
+}
+
+.product-card h3{
+    margin-top:40px;
+    font-size:19px;
+    color:#333;
+}
+
+.product-card h3 span{
+    display:block;
+    font-size:14px;
+    font-weight:400;
+    color:#777;
+    margin-top:6px;
+}
+
+/* ===============================
 PRODUCTS
 =================================*/
 
